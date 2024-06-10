@@ -1,6 +1,7 @@
 import Image from 'next/image';
+import { NextPage } from 'next';
 
-export function Home() {
+const Home: NextPage = () => {
   return (
     <div className="font-ubuntu min-h-screen flex flex-col">
       {/* Hero Section */}
@@ -28,7 +29,7 @@ export function Home() {
             height={300} // Specify the height of the image
           />
           <p className="text-lg leading-relaxed">
-            iTongue is a tongue analysis app for smartphones and tablets that analyzes tongue images. It provides food and lifestyle advice based on traditional Chinese medicine. In addition, the user can take a questionnaire to obtain an additional health assessment and recommendation. Although the app isn't for professional diagnosis, it can still provide warnings about physical and mental weaknesses, and the users can follow up with lifestyle changes or hospital visits.
+            iTongue is a tongue analysis app for smartphones and tablets that analyzes tongue images. It provides food and lifestyle advice based on traditional Chinese medicine. In addition, the user can take a questionnaire to obtain an additional health assessment and recommendation. Although the app is not for professional diagnosis, it can still provide warnings about physical and mental weaknesses, and the users can follow up with lifestyle changes or hospital visits.
           </p>
         </div>
       </section>
@@ -59,4 +60,6 @@ export function Home() {
     </div>
   );
 }
-export default Home
+
+
+export default Home;

@@ -9,8 +9,9 @@ import {
 	TableHeader,
 	TableRow,
   } from "@/components/ui/table"
+import { NextPage } from "next";
   
-export function PrevUploads() {
+  const PrevUploads: NextPage = () => {
 	const dummy_data = [
 		{
 			"uploadDt":"2024-05-06",
@@ -65,9 +66,9 @@ export function PrevUploads() {
 								</TableRow>
 							</TableHeader>
 							<TableBody>
-								{dummy_data.map((item)=>{
+								{dummy_data.map((item,i)=>{
 									return (
-										<TableRow>
+										<TableRow key={i}>
 											<TableCell className="font-medium">{item["uploadDt"]}</TableCell>
 											<TableCell>{item["jobId"]}</TableCell>
 											<TableCell className="text-center">{item["projectedCompletionDt"]}</TableCell>

@@ -5,8 +5,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Progress } from '@/components/ui/progress';
 import React, { useState } from 'react';
 import { File } from 'lucide-react';
+import { NextPage } from 'next';
 
-const AboutPage = () => {
+const PrevUploads: NextPage = () => {
   const handleFileChange = (event: any) => {
     if(event.target != null){
       if(event.target.files[0] != null){
@@ -55,4 +56,4 @@ const AboutPage = () => {
 );
 };
 
-export default AboutPage;
+export default PrevUploads;
